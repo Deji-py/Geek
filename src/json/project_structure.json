@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Free",
+    "value": "Free",
+    "messageTitle": " Free Tool",
+    "message": " Your tool is completely free to use"
+  },
+  {
+    "title": "Freemium",
+    "value": "Freemium",
+    "messageTitle": " Freemium Tool",
+    "message": " Your tool is free to use but offers premium features"
+  },
+  {
+    "title": "Premium",
+    "value": "Premium",
+    "messageTitle": " Premium Tool",
+    "message": " Your tool is not free to use, only paid features"
+  }
+]

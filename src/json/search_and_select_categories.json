@@ -1,0 +1,7 @@
+[
+  { "label": "Ai", "value": "aitools" },
+  { "label": "Design", "value": "design" },
+  { "label": "Development", "value": "development" },
+  { "label": "Marketing", "value": "marketing" },
+  { "label": "No Code", "value": "nocode" }
+]

@@ -1,0 +1,381 @@
+@layer tailwind-base, primereact, tailwind-utilities;
+
+/* IMPORTANT: In "styled" mode you must add the PrimeReact Theme here. Do NOT include in "unstyled" mode */
+@import "primereact/resources/themes/nano/theme.css" layer(primereact);
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+@layer base {
+  :root {
+    --background: 216 100% 1%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 231 32% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 231 32% 8%;
+
+    --primary: 223 100% 59%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 223 33% 4%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 0 0% 33%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 231 32% 8%;
+
+    --radius: 0.5rem;
+    --glassBorder: 213 29% 15%;
+    --greeny: 172 91% 45%;
+  }
+
+  .dark {
+    --background: 216 100% 1%;
+    --foreground: 210 40% 98%;
+
+    --primary_hover: 223 85% 33%;
+
+    --card: 231 32% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 231 32% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --glassBorder: 213 29% 15%;
+    --greeny: 172 91% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  .resposiveWidth {
+    @apply xl:px-20 max-w-7xl  w-full xl:max-w-full xl:w-[100%];
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.primary_btn:hover {
+  background-color: #161e27 !important;
+  transition: all;
+  animation-duration: 0.5s;
+  border: solid 0.5px hsl(212, 28%, 25%) !important;
+  box-shadow: none !important;
+}
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.rmsc.dark {
+  --rmsc-main: #242424;
+  --rmsc-hover: hsl(213 29% 15%);
+  --rmsc-selected: hsl(210 11% 10%);
+  --rmsc-border: hsl(213 29% 15%);
+  --rmsc-gray: #434852;
+  --rmsc-bg: hsl(223 33% 4%);
+  color: #fff;
+  --rmsc-radius: 8px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.glow_button {
+  box-shadow: 0px 0px 10px rgba(46, 210, 255, 0.711);
+}
+
+.gradient_text {
+  background: linear-gradient(to right, #2e69ff, hsl(167, 100%, 50%));
+  background-clip: text;
+  color: transparent;
+}
+
+.grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.102' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='15' specularConstant='0.75' specularExponent='20' lighting-color='%237957A8' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='100'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='transparent'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%237957a8' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.animdurat {
+  animation-duration: 0.5s;
+}
+
+/* .swiper-slide {
+  width: fit-content !important;
+  display: flex !important;
+} */
+
+.glassmorphism {
+  background: rgba(22, 30, 39, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(37, 51, 65, 0.5);
+}
+
+.svg_glow {
+  filter: drop-shadow(3px 3px 10px rgba(46, 105, 255, 0.711));
+}
+
+.ripple {
+  /*background: #79b928;
+	color: #fff;*/
+  padding: 20px 23px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    #2e69ff,
+    #2e69ff,
+    #2e69ff,
+    hsl(167, 100%, 50%)
+  );
+  color: white;
+  width: 10%;
+  height: 25%;
+  border-radius: 50%;
+  z-index: 1;
+  top: 35%;
+  left: 45%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/*.ripple:hover {
+	background: #74b126;
+	color: #fff;
+}*/
+
+.ripple:hover::before {
+  -webkit-transform: scale(12);
+  transform: scale(12);
+  -webkit-transition: border-radius 0.5s 0.5s, -webkit-transform 0.5s;
+  transition: border-radius 0.5s 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, border-radius 0.5s 0.5s;
+  transition: transform 0.5s, border-radius 0.5s 0.5s, -webkit-transform 0.5s;
+}
+
+.ripple:hover::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.animated_gradient {
+  background: linear-gradient(300deg, #00ff9b, #2e69ff);
+  background-size: 120% 120%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc !important; /* Inactive color */
+  opacity: 1;
+}
+
+.animateglow {
+  border-radius: 100px;
+  background-color: #ccc;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #2e69ff92;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #2e69ff82;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(37, 51, 65, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #394a5d;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 165, 208) 7;
+}
+
+/* HTML: <div className="loader"></div> */
+.loader {
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, white 94%, #0000) top/4px 4px
+      no-repeat,
+    conic-gradient(#0000 30%, white);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 4px), #000 0);
+  animation: l13 0.5s infinite linear;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* prime react */
+
+/* General dropdown styling */
+.p-dropdown-panel {
+  background-color: hsl(var(--secondary));
+}
+
+.p-dropdown {
+  color: white;
+  border-radius: 5px;
+}
+
+/* Dropdown item styling */
+.p-dropdown-item {
+  color: #ffffff;
+}
+
+.p-dropdown-item:hover {
+  background-color: hsl(var(--glassBorder));
+}
+
+/* Selected dropdown item styling */
+.p-dropdown-item.p-focus {
+  background-color: hsl(
+    var(--glassBorder)
+  ) !important; /* Change this to your desired background color */
+}
+
+.p-multiselect-token {
+  background-color: #0d192c;
+  color: #4285f4;
+  border: 0.2px solid #4285f4;
+  padding: 1px;
+  padding-left: 8px;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.p-multiselect-panel {
+  background-color: hsl(var(--secondary));
+}
+.p-multiselect-item {
+  color: #ffffff;
+}
+
+.p-multiselect-item:hover {
+  background-color: hsl(var(--glassBorder));
+}
+.p-multiselect-item.p-focus {
+  background-color: hsl(
+    var(--glassBorder)
+  ) !important; /* Change this to your desired background color */
+}
+.p-multiselect {
+  background-color: hsl(var(--secondary));
+}
+.p-multiselect-header {
+  background-color: hsl(var(--secondary));
+}
+.p-multiselect-filter {
+  background-color: hsl(var(--glassBorder));
+  color: white;
+  padding: 5px;
+}
+
+.p-multiselect-item.p-highlight {
+  background-color: hsl(var(--glassBorder) / 50);
+}
+.p-sidebar-content {
+  overflow: hidden !important;
+}
+.p-dialog-content {
+  overflow: hidden !important;
+}
+.p-sidebar-header {
+  color: white;
+}
+.p-dialog {
+  border: solid hsl(var(--glassBorder)) 0.1px !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: hsl(var(--primary));
+  border-color: hsl(var(--primary));
+  color: #fff;
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "route": "/"
+  },
+  {
+    "title": "Explore",
+    "route": "/explore"
+  },
+  {
+    "title": "Best Tools",
+    "route": "/best-tool"
+  },
+  {
+    "title": "Blog",
+    "route": "/blog"
+  },
+  {
+    "title": "Pricing",
+    "route": "/pricing"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  { "name": "Yearly", "value": "yearly" },
+  { "name": "Monthly", "value": "monthly" },
+  { "name": "Annually", "value": "annually" }
+]
