@@ -5,7 +5,7 @@ import reject from "../../../../public/images/png/reject.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useSearchParams, useRouter } from "next/navigation";
-import fetchProfile from "@/utils/fetchProfile";
+
 
 const PayedForPremiumUser = () => {
   return (
