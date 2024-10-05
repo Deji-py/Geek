@@ -161,7 +161,7 @@ function Login() {
         <SigninWithGoogleButton />
         <div className="w-full text-center mt-8 flex flex-col justify-center">
           <p className="text-base font-light">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
             <a href="/signup">
               <span className="cursor-pointer font-semibold hover:underline text-primary">
                 Signup
